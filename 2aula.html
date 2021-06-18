@@ -1,0 +1,42 @@
+<html>
+
+ <head>
+        <title>meu SITE</title>
+    </head>
+
+    <body>
+        <H1> OLA COLEGAS!!!</H1>
+        <h2>vou aprender</h2>
+        <h3>vamo que vamoo</h3>
+        <button onclick="changeBg(event)">mudar cor</button>
+        <button onclick="checaridade()">checar idade</button>
+                <input type="text" id= "arroz">
+</body>
+<script>
+
+        function checaridade(){
+                document.getElementById("arroz").value= minhaidade;
+
+                if (minhaidade>22){
+                        document.body.style.backgroundColor = 'green';
+                }
+        }
+
+        var meuapelido = 'saldanha';
+        var minhaidade = 26;
+        
+        console.log (`meu apelido é ${meuapelido} e eu tenho ${minhaidade} anos.`);
+     
+        var sexo = 'masculino'
+        var cor = 'moreno'
+
+        console.log(`meu sexo é ${sexo} e sou da cor ${cor} `)
+        
+        function changeBg (event) {
+         if (document.body.style.backgroundColor ==='red') {
+            document.body.style.backgroundColor='purple ' ;
+         } else {document.body.style.backgroundColor ='red'
+        }
+        }
+        </script>
+</html>
